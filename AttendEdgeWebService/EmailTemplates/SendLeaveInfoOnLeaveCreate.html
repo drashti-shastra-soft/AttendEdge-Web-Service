@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Leave Request Notification</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, sans-serif;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8; padding:30px 0;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:1px solid #e0e0e0; border-radius:8px;">
+                    <tr>
+                        <td align="center" style="background-color:#0078d4; color:#ffffff; padding:20px; font-size:24px; font-weight:bold;">
+                            New Leave Request Submitted
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:20px; color:#333333; font-size:16px;">
+                            <h2 style="margin-top:0;">Hello {{ManagerName}},</h2>
+                            <p style="margin:0 0 15px 0;">An employee has submitted a new leave request.</p>
+                            <p style="margin:0 0 15px 0;">Here are the details:</p>
+                            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+                                <tr>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd; font-weight:bold;">Employee Name</td>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd;">{{EmployeeName}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd; font-weight:bold;">Leave Type</td>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd;">{{LeaveType}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd; font-weight:bold;">Start Date</td>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd;">{{StartDate}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd; font-weight:bold;">End Date</td>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd;">{{EndDate}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd; font-weight:bold;">Reason</td>
+                                    <td style="padding:8px; border-bottom:1px solid #ddd;">{{Reason}}</td>
+                                </tr>
+                            </table>
+                            <p style="margin-top:20px;">Please review and take the necessary action.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="background-color:#f0f0f0; padding:15px; font-size:12px; color:#777777;">
+                            This is an automated message from the Leave Management System.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
